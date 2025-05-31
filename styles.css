@@ -1,0 +1,44 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Grid Container */
+  .contact-list-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
+    grid-template-rows: repeat(2, 1fr);    /* 2 equal-height rows */
+    gap: 10px;                             /* Space between items */
+    /* padding: 10px; */
+    /* max-width: 600px; */
+    /* margin: 0 auto; */
+  }
+  
+  /* List Styling */
+  #contact-list {
+    list-style: none;
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap: 10px;
+  }
+  
+  /* Contact Item Styling */
+  .contact-item {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
